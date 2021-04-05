@@ -1,0 +1,51 @@
+.act-name {
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.chapter-name {
+	font-size: 200%; 
+	font-weight: bold; 
+	line-height: 0;
+}
+
+.body-basic {
+	margin-left: 15%;
+	margin-right: 5%;
+	margin-top: 5%;
+}
+
+.scene-name {
+	font-size: 140%;
+	font-weight: bold;
+}
+
+.scene-text {
+	text-indent: 4ch;
+}
+
+.scene-desc {
+	text-align: right;
+}
+
+.side-navigation {
+	height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+	text-align: center;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.side-navigation a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
