@@ -1,0 +1,30 @@
+/*Text Classes*/
+.ArticleName {
+	font-size: 64px;
+	text-align: center;
+	color: #000;
+}
+
+/*Top Bar*/
+.TopBar {
+	background-color: #80bd9e;
+	overflow: hidden;
+}
+
+.TopBar a {
+	float: left;
+	color: #2a3132;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.TopBar a:hover {
+	background-color: #89da59;
+	color: #324851;
+}
+
+.TopBar a:active {
+	background-color: #c7f381fd;
+}
