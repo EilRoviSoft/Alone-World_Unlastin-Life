@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "bootstrap4": "^0.0.1-security",
-    "firebase": "^8.3.2"
+    "firebase": "^8.4.1",
+    "jquery": "^3.6.0"
   }
 }
