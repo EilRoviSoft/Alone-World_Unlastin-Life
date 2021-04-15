@@ -9,145 +9,132 @@ body {
 	background-color: var(--bg-color);
 }
 
-/*Top Bar*/
-.TopBar {
-	background-color: var(--base-elelment);
-	overflow: hidden;
-	transition: margin-left .5s;
-	height: fit-content;
-}
-
-.TopBar a {
-	float: left;
-	color: var(--base-text);
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	padding: 15px 10px 15px 10px;
-	font-size: 20px;
-	z-index: 1;
-}
-
-.TopBar .NonEmpty:hover {
-	background-color: var(--base-hover-element);
-	color: var(--base-text);
-}
-
-.TopBar .SideBarOpener {
-	font-size: 20px;
-	cursor: pointer;
-	border: none;
-}
-
 /*Chapter Only*/
-.TopBar .InactiveArrow {
-	color: var(--inactive-text);
-}
+	.TextContent {
+		margin-left: 200px;	
+		margin-right: 200px;
+	}
 
-.TextContent {
-	margin-left: 200px;	
-	margin-right: 200px;
-}
+	.TextContent p {
+		font-size: 16px;
+		text-indent: 16px;
+		color: var(--base-text);
+	}
 
-.TextContent p {
-	font-size: 16px;
-	text-indent: 16px;
-	color: var(--base-text);
-}
+	.TextContent .Scene {
+		font-size: 18px;
+	}
 
-.TextContent .Scene {
-	font-size: 18px;
-}
+	/*TopBar*/
+		.TopBar {
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			background-color: var(--base-elelment);
+		}
+
+		.TopBar .Element {
+			color: var(--base-text);
+			padding-left: 10px;
+			font-size: 18px;
+			padding-right: 10px;
+			height: inherit;
+		}
+
+		.TopBar .Element:hover {
+			color: var(--base-hover-text);
+			background-color: var(--base-hover-element);
+		}
 
 /*Button to the top*/
-.UpButton {
-	transition: opacity 0.5s;
-	bottom: 30px;
-	right: 60px;
-	cursor: pointer;
-	position: fixed;
-	opacity: 0;
-}
+	.UpButton {
+		transition: opacity 0.5s;
+		bottom: 30px;
+		right: 60px;
+		cursor: pointer;
+		position: fixed;
+		opacity: 0;
+	}
 
-/*Main Body*/
-.Paper {
-	width: auto;
-	margin-top: 40px;
-	margin-left: 10%;
-	margin-right: 5%;
-}
+/*MainPage Body*/
+	.Paper {
+		width: auto;
+		margin-top: 40px;
+		margin-left: 10%;
+		margin-right: 5%;
+	}
 
-.Article {
-	font-size: 56px;
-	color: var(--base-hover-text);
-	margin-bottom: 10px;
-}
+	.Paper .Article {
+		font-size: 56px;
+		color: var(--base-hover-text);
+		margin-bottom: 10px;
+	}
 
-/*PaperBar*/
-.PaperBar {
-	display: inline-block;
-	position: relative;
-	list-style: none;
-}
+	/*PaperBar*/
+		.Paper .PaperBar {
+			display: inline-block;
+			position: relative;
+			list-style: none;
+		}
 
-.PaperBar a {
-	font-size: 20px;
-	color: var(--base-text);
-	padding-left: 10px;
-	padding-right: 10px;
-}
+		.PaperBar a {
+			font-size: 20px;
+			color: var(--base-text);
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 
-.PaperBar a:hover {
-	text-decoration: none;
-	color: var(--base-hover-text);
-	transition: .5s color;
-}
+		.PaperBar a:hover {
+			text-decoration: none;
+			color: var(--base-hover-text);
+			transition: .5s color;
+		}
 
-/*Main Body*/
-.BaseBox {
-	opacity: 0.9;
-	border-radius: 10px 10px;
-	background-color: var(--base-elelment);
-	padding: 10px;
-}
+	/*Main Body*/
+		.Paper .BaseBox {
+			opacity: 0.9;
+			border-radius: 10px 10px;
+			background-color: var(--base-elelment);
+			padding: 10px;
+		}
 
-.BaseBox .BaseInfo {
-	display: block;
-	height: fit-content;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: 16px;
-	color: var(--base-text);
-}
+		/*Base Info Classes*/
+			.BaseBox .BaseInfo {
+				display: block;
+				height: fit-content;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 16px;
+				color: var(--base-text);
+			}
 
-.BlockName {
-	font-size: 20px;
-}
+			.BlockName {
+				font-size: 20px;
+			}
 
-.BaseBox .BaseInfo p {
-	line-height: 1.2;
-}
+			.BaseBox .BaseInfo p {
+				line-height: 1.2;
+			}
 
-.BaseBox .ChapterInfo {
-	margin-top: 18px;
-	list-style-type: none;
-	align-items: center;
-	display: none;
-}
+		/*Chapter Info Classes*/
+			.BaseBox .ChapterInfo {
+				margin-top: 18px;
+				align-items: center;
+				display: none;
+			}
 
-.BaseBox .ChapterInfo div {
-	height: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: 18px;
-	color: var(--base-text);
-}
+			.ChapterInfo p {
+				height: fit-content;
+				padding-left: 10px;
+				padding-right: 10px;
+				color: var(--base-text);
+				text-decoration: none;
+			}
 
-.BaseBox .ChapterInfo tab {
-	padding-left: 40px;
-}
-
-.BaseBox .ChapterInfo a {
-	text-decoration: none;
-	color: inherit;
-}
+			.ChapterInfo a {
+				text-decoration: none;
+				color: inherit;
+			}
