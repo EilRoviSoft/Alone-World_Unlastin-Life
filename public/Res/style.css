@@ -6,15 +6,13 @@ body {
 	--base-text: #dddddd;
 	--base-hover-text: #ffffff;
 
-	--text-content-shift: 17.5%;
-
 	background-color: var(--bg-color);
 }
 
 /*Chapter Only*/
 	.TextContent {
-		margin-left: var(--text-content-shift);	
-		margin-right: var(--text-content-shift);
+		margin-left: 17.5%;	
+		margin-right: 17.5%;
 	}
 
 	.TextContent p {
@@ -26,21 +24,6 @@ body {
 	.TextContent .Scene {
 		font-size: 16px;
 	}
-
-	/*SideBar*/
-		/*.SideBar {
-			right: 0;
-			padding: 0;
-			width: 30%;
-			background-color: var(--base-hover-element);
-			height: 100%;
-			position: fixed;
-			overflow: auto;
-		}
-
-		.SideBar .Element {
-			font-size: 18px;
-		}*/
 
 	/*TopBar*/
 		.TopBar {
@@ -55,34 +38,27 @@ body {
 			transition: opacity 0.2s;
 		}
 
-		.TopBar .Element {
+		.TopBar .Element, .TopBar .Empty, .TopBar .MainPage {
 			color: var(--base-text);
 			font-size: 16px;
+			padding: 15px 10px 15px 10px;
 			display: inline-block;
 			text-decoration: none;
 			font-family: "Segoe UI";
-		}
-
-		.TopBar .Element:hover {
-			color: var(--base-hover-text);
-			background-color: var(--base-hover-element);
 		}
 
 		.TopBar .Empty {
 			color: var(--inactive-text);
-			font-size: 16px;
-			display: inline-block;
-			text-decoration: none;
-			font-family: "Segoe UI";
 		}
 
-		.Element .SubName {
-			font-size: 12px;
-			opacity: 0.8;
+		.TopBar .Element:hover, .TopBar .MainPage:hover {
+			color: var(--base-hover-text);
+			background-color: var(--base-hover-element);
 		}
 
-		.Element .ChName {
-			font-size: 14px;
+		.TopBar .MainPage {
+			margin-left: 10%;
+			margin-right: 5%;
 		}
 
 /*Button to the top*/
@@ -174,3 +150,36 @@ body {
 				text-decoration: none;
 				color: inherit;
 			}
+
+			.ChapterInfo .Act {
+				font-size: 20px;
+			}
+
+			.ChapterInfo .Chapter {
+				font-size: 16px; 
+				text-indent: 40px;
+			}
+
+			.ChapterInfo .Chapter:hover {
+				color: var(--base-hover-text);
+			}
+
+/*Mobile*/
+
+@media only screen and (max-width: 1000px) {
+	.PageNavigate {
+		display: none;
+	}
+
+	.TextContent {
+		margin-left: 2.5%;
+		margin-right: 2.5%;	
+	}
+
+	.TopBar .MainPage {
+		margin-left: 0;
+		margin-right: 0;
+		text-align: center;
+		width: 100%;
+	}
+}
