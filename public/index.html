@@ -1,56 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="resources/css.css" rel="stylesheet">
+
 	<title>Alone World Project</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="./Res/style.css">
-
-	<style>
-		body {
-			margin: 0; 
-			font-family: sans-serif;
-			background-image: url(./Res/bg.jpg);
-		}
-	</style>
 </head>
+
 <body>
-	<div class="UpButton" id="UpButton" onclick="onUpButtonClick()">
-		<img src="./Res/button-to-top.png" style="border: none;">
-	</div>
-
-	<div class="Paper" id="Paper">
-		<div class="Article" style="margin-left: 20px;">Alone World Project</div>
-		<div class="BaseBox">
-			<div class="PaperBar" id="PaperBar">
-				<a onclick="openState('Info')">Information</a>
-				<a onclick="openState('Chapters')">Chapters</a>
+	<div class="page">
+		<div class="page__brief">
+			<img src="resources/img/cover.png" width="250px" style="border-radius: 5px;">
+		</div>
+		<div class="page-extend">
+			<!--<div class="page-extend__title">
+				Alone World Project
 			</div>
+			<div class="page-extend__body">
+				<ul class="sector-table">
+					<li class="sector-table__active" onclick="setState('Info')" id="RInfo">Information</li>
+					<li class="sector-table__basic" onclick="setState('Ch')" id="RCh">Chapters</li>
+				</ul>
 
-			<hr>
+				<div class="reader">
+					<div id="Info" style="display: block;">
+						<p>Эпоха великих битв и героев подходит к концу. Уже не ведутся столь масштабные войны и
+							сражения, взамен - спокойная жизнь. Конечно, остаются и уголки Зорла, охваченые влиянием
+							Ружеверны, но их слишком мало, чтобы потревожить мирное население.</p>
+						<p>Данная история повествует о жизни Икара Рейна, паренька из одной провинциальной деревушки,
+							находящейся под властью Великой Беотийской Конфедерации; его приключениях по миру; обучению
+							в Академии; повседневной рутине и проблемах.</p>
+					</div>
+					<div id="Ch" style="display: none;">
+						<ul class="reader-list">
+							<div class="reader-list__item">Act 0. Part 0. Revitalizing reality</div>
+						</ul>
+					</div>
+				</div>
+			</div>-->
+			<div class="page-extend__title">Alone World Project</div>
+			<div class="page-extend__body">
+				<ul class="sector-table">
+					<li class="sector-table__active" onclick="setState('Info')" id="RInfo">Information</li>
+					<li class="sector-table__basic" onclick="setState('Ch')" id="RCh">Chapters</li>
+				</ul>
 
-			<div class="BaseInfo" style="margin-top: 20px; margin-bottom: 10px;" id="Info">
-				<div class="BlockName">Описание</div>
-				<p>Эпоха великих битв и героев подходит к концу. Уже не ведутся столь масштабные войны и сражения, взамен - спокойная жизнь. Конечно, остаются и уголки Зорла, охваченые влиянием Ружеверны, но их слишком мало, чтобы потревожить мирное население.</p>
-				<p>Данная история повествует о жизни Икара Рейна, паренька из одной из провинциальных деревушек внутри Великой Беотийской Конфедерации, его приключениях по миру, обучению, повседневной рутине и проблемах.</p>
-				<div class="BlockName">Комментарий Автора</div>
-				<p>Мне немного уже надоело писать Initialize... Точнее, не надоело, сложно придумать что-то уникальное, чем изначально и задумывалось, а если и получается, то очень сложно вставить такие сцены в сюжет. Предупреждаю сразу, выходить здесь главы будут, то очень часто, то очень редко, в зависимости от апдейта глав Initalize.</p>
-				<p>Спасибо за то, что зашли почитать. Прошу, оставьте комментарий и напишите об увиденных плюса или минусах.</p>
-			</div>
-			<div class="ChapterInfo" id="Chapters">
-				<p class=".Act">
-					Act 0; The tale of a cruel world — Сказка о жестоком мире
-				</p>
-				<p class="Chapter">
-					<a href="./v0/c0.html">Part 0; Revitalizing reality – Оживление реальности</a>
-				</p>
+				<div class="reader">
+					<div id="Info" style="display: block;">
+						<p>Эпоха великих битв и героев подходит к концу. Уже не ведутся столь масштабные войны и
+							сражения, взамен - спокойная жизнь. Конечно, остаются и уголки Зорла, охваченые влиянием
+							Ружеверны, но их слишком мало, чтобы потревожить мирное население.</p>
+						<p>Данная история повествует о жизни Икара Рейна, паренька из одной провинциальной деревушки,
+							находящейся под властью Великой Беотийской Конфедерации; его приключениях по миру; обучению
+							в Академии; повседневной рутине и проблемах.</p>
+					</div>
+					<div id="Ch" style="display: none;">
+						<ul class="reader-list">
+							<div class="reader-item">
+								<a class="reader-item__text" href="">Act 1. Part 1 &ndash; Revitalizing reality</a>
+								<div class="reader-item__date">21.04.2021</div>
+							</div>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="./Res/main.js"></script>
+	<script src="resources/main.js"></script>
 </body>
+
 </html>
