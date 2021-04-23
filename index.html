@@ -17,26 +17,77 @@
 			<img src="resources/img/cover.png" class="page-brief__image">
 
 			<div class="page-biref__content">
-				Some
+				<div class="brief-list">
+					<div class="brief-list__item">
+						<div class="type">Статус написания</div>
+						<div class="text">Продолжается</div>
+					</div>
+					<div class="brief-list__item">
+						<div class="type">Год релиза</div>
+						<div class="text">2017</div>
+					</div>
+					<div class="brief-list__item">
+						<div class="type">Тип</div>
+						<div class="text">Новелла</div>
+					</div>
+					<div class="brief-list__item">
+						<div class="type">Количество глав</div>
+						<div class="text">1</div>
+					</div>
+					<div class="brief-list__item">
+						<div class="type">Автор</div>
+						<a class="text" href="https://vk.com/genius_deus" id="Author">Eil RoviSoft</a>
+					</div>
+					<!--<div class="brief-list__item">
+						<div class="type">Сооавторы</div>
+						<a class="text" href="" id="Author">Shen</a>
+					</div>-->
+					<div class="brief-list__item">
+						<div class="type">Редакторы</div>
+						<a class="text" href="https://vk.com/d2marismo" id="Author">Shen</a>
+					</div>
+					<div class="brief-list__item">
+						<div class="type">Возрастной рейтинг</div>
+						<div class="text" style="color: red;">R (16+)</div>
+					</div>
+					<!--<div class="brief-list__item">
+						<div class="type">Количество просмотров</div>
+						<div class="text">[[Undefined]]</div>
+					</div>-->
+				</div>
 			</div>
 		</div>
 		<div class="page-extend">
 			<div class="page-extend__title">Alone World Project</div>
 			<div class="page-extend__body">
 				<ul class="sector-table">
-					<li class="sector-table__active" onclick="setState('Info')" id="RInfo">Information</li>
-					<li class="sector-table__basic" onclick="setState('Ch')" id="RCh">Chapters</li>
+					<li class="sector-table__active" onclick="setState('Info')" id="RInfo">Информация</li>
+					<li class="sector-table__basic" onclick="setState('Ch')" id="RCh">Главы</li>
+					<li class="sector-table__basic" onclick="setState('Gloss')" id="RGloss">Глосарий</li>
 				</ul>
 
 				<div class="reader">
 					<div id="Info" style="display: block;">
-						<p>Эпоха великих битв и героев подходит к концу. Уже не ведутся столь масштабные войны и сражения, взамен - спокойная жизнь. Конечно, остаются и уголки Зорла, охваченые влиянием Ружеверны, но их слишком мало, чтобы потревожить мирное население.</p>
-						<p>Данная история повествует о жизни Икара Рейна, паренька из одной провинциальной деревушки, находящейся под властью Великой Беотийской Конфедерации; его приключениях по миру; обучению в Академии; повседневной рутине и проблемах.</p>
+						<p style="margin: 20px 0 10px 0"><b>Описание:</b></p>
+						<p>Эпоха великих битв и героев подходит к концу. Уже не ведутся столь масштабные войны и сражения, взамен – спокойная жизнь. Конечно, остаются и уголки Зорла, охваченые влиянием Ружеверны, но их слишком мало, чтобы потревожить мирное население.</p>
+						<p>Данная история повествует о жизни Икара Рейна – паренька из одной провинциальной деревушки, находящейся под властью Великой Беотийской Конфедерации.</p>
+						<p style="margin: 20px 0 10px 0"><b>Жанры:</b></p>
+						<div class="reader__genre-section" style="margin-bottom: 20px;">
+							<div>Драма</div>
+							<div>Повседневность</div>
+							<div>Романтика</div>
+							<div>Фантастика и Фентези</div>
+							<div>Экшн</div>
+						</div>
 					</div>
 					<div id="Ch" style="display: none;">
 						<ul class="reader-list">
-							<div class="reader-item">
-								<a class="reader-item__text" data-id="0" href="./v0.p1.html">Act 0. Part 0 – Revitalizing reality</a>
+							<div class="reader-item" id="Ch1">
+								<a class="reader-item__text" href="./v0.p1.html">Act 0. Part 0 – Lost in life</a>
+								<div class="reader-item__date">24.04.2021</div>
+							</div>
+							<div class="reader-item__bottom" id="Ch0">
+								<a class="reader-item__text" href="./v0.p0.html">Act 0. Part 0 – Revitalizing reality</a>
 								<div class="reader-item__date">21.04.2021</div>
 							</div>
 						</ul>
